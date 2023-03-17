@@ -15,6 +15,7 @@ h2 {
   font-weight: 600;
   font-size: 54px;
   line-height: 87px;
+  margin: 0;
 }
 
 h3 {
@@ -119,6 +120,23 @@ p {
 }
 .matrix .big-block {
   width: calc(66.6666666667% - 60px);
+}
+
+.slick-arrow {
+  background: #E3B748;
+  border-radius: 100%;
+  outline: none;
+  border: none;
+  padding: 26px;
+  position: relative;
+}
+
+.slick-disabled {
+  background-color: #E6E6E6;
+}
+
+.slick-prev {
+  margin-right: 20px;
 }
 
 .container {
@@ -275,19 +293,190 @@ p {
   opacity: 0;
 }
 
-.slick-arrow {
-  background: #E3B748;
-  border-radius: 100%;
-  outline: none;
-  border: none;
-  padding: 26px;
-  position: relative;
+.team {
+  margin-bottom: 140px;
 }
-
-.slick-disabled {
-  background-color: #E6E6E6;
+.team .team-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-
-.slick-prev {
+.team .team-wrap .team-item {
+  border-radius: 14px;
+  padding-left: 28px;
+  padding-top: 18px;
+  padding-bottom: 23px;
+  display: flex;
+  align-items: center;
+  width: calc(33.3333333333% - 45px);
+  margin-bottom: 30px;
+  transition: all 0.2s ease-in-out;
+}
+.team .team-wrap .team-item h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.team .team-wrap .team-item small {
+  color: #5e5e5e;
+}
+.team .team-wrap .team-item .team-item-img {
   margin-right: 20px;
+  border-radius: 50%;
+}
+.team .team-wrap .team-item:hover {
+  background: #E3B748;
+}
+
+.faq .faq-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.faq .faq-wrap .faq-left {
+  display: flex;
+  flex-basis: 40%;
+  flex-direction: column;
+}
+.faq .faq-wrap .faq-right {
+  display: flex;
+  flex-basis: 40%;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: 140px;
+}
+.faq .faq-wrap .faq-right h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+.faq .faq-wrap .faq-right .faq-right-title {
+  margin-bottom: 40px;
+}
+
+.inline-form {
+  margin-bottom: 240px;
+}
+.inline-form .inline-form-wrap {
+  background: rgba(71, 71, 71, 0.5);
+  padding: 90px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.inline-form .inline-form-wrap h2 {
+  margin-bottom: 40px;
+}
+.inline-form .inline-form-wrap .form-group {
+  height: 53px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.inline-form .inline-form-wrap .form-group input {
+  height: 100%;
+  padding-left: 23px;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+}
+.inline-form .inline-form-wrap .form-group button {
+  height: 106%;
+  background: #E3B748;
+  color: #000;
+  text-transform: uppercase;
+  padding: 0px 20px;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  cursor: pointer;
+}
+
+.footer {
+  background: #171717;
+  padding-top: 118px;
+  padding-bottom: 90px;
+}
+.footer .footer-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.footer .footer-top nav {
+  display: flex;
+  align-items: center;
+}
+.footer .footer-top nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.footer .footer-top nav ul li {
+  margin-right: 80px;
+}
+.footer .footer-top nav ul li:last-child {
+  margin-right: 0;
+}
+.footer .footer-top nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.footer .footer-top .footer-social a {
+  margin-right: 23px;
+}
+.footer .footer-top .footer-social a:last-child {
+  margin-right: 0;
+}
+.footer .footer-bot {
+  display: flex;
+  justify-content: center;
+}
+.footer .footer-bot ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer .footer-bot ul li {
+  margin-right: 25px;
+}
+.footer .footer-bot ul li:last-child {
+  margin-right: 0;
+}
+.footer .footer-bot ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.accordeon-wrap .accordeon-item {
+  padding: 40px 0;
+  border-top: 2px solid #5e5e5e;
+}
+.accordeon-wrap .accordeon-item .accordeon-item-title {
+  position: relative;
+  cursor: pointer;
+}
+.accordeon-wrap .accordeon-item .accordeon-item-title h3 {
+  margin: 0;
+}
+.accordeon-wrap .accordeon-item .accordeon-item-title span {
+  background: #E3B748;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+}
+.accordeon-wrap .accordeon-item .accordeon-item-body {
+  display: none;
 }
